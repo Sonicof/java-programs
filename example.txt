@@ -1,0 +1,74 @@
+Types of Methods :
+          Instance Method: / Call By Value
+
+                  public class Main
+                  {
+                      int add(int x ,int y)
+                      {
+                          return x+y;
+                      }
+                  	public static void main(String[] args) {
+                  	    Main m1=new Main();
+                  	    int a=m1.add(5,4);
+                  		System.out.println(a);
+                  	}
+                  }
+          Static Method: 
+
+                  public class Main
+                  {
+                      static int add(int x ,int y)
+                      {
+                          return x+y;
+                      }
+                    public static void main(String[] args) {
+                        int a=add(5,4);
+                      System.out.println(a);
+                    }
+                  }
+
+                  
+
+ recursive function :
+
+                  
+              public class Main {
+                  // Recursive method to print numbers from start to end
+                  public static void printNumbers(int start, int end) {
+                      // Base case: If start exceeds end, return
+                      if (start > end) {
+                          return;
+                      }
+                      
+                      // Print the current number
+                      System.out.println(start);
+                      
+                      // Recursive call with start incremented by 1
+                      printNumbers(start + 1, end);
+                  }
+              
+                  public static void main(String[] args) {
+                      // Call the recursive method to print numbers from 1 to 10
+                      printNumbers(1, 9);
+                  }
+              }
+
+
+
+              Static method not in same class
+
+              public class Main
+              {
+                  
+              	public static void main(String[] args) {
+              	    int a=test1.add(5,4);
+              		System.out.println(a);
+              	}
+              }
+              class test1
+              {
+                  static int add(int x,int y)
+                  {
+                      return x+y;
+                  }
+              }
